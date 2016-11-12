@@ -1,0 +1,16 @@
+ShrinkWrap Docker Builder Image
+-------------------------------
+
+Building
+~~~~~~~~
+
+`docker build -t shrinkwrap-builder .`
+
+Usage
+~~~~~
+
+* `cd [shrinkwrapDir]`
+
+* `docker run --privileged=true -v {backtick}pwd{backtick}:/opt/jboss/shrinkwrap shrinkwrap-builder mvn clean install -f /opt/jboss/shrinkwrap`
+
+* `docker run --privileged=true -v {backtick}pwd{backtick}:/opt/jboss/shrinkwrap shrinkwrap-builder mvn site -f /opt/jboss/shrinkwrap`
